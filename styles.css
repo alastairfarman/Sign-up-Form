@@ -28,33 +28,35 @@ h1,h2,h3,h4,h5,h6 {
     box-sizing: border-box;
 }
 
-#logo {
-    font-family: 'Playfair Display',serif;
-    font-style:italic;
-    font-weight: bold;
-    font-size: 70px;
-    text-align: center;
-    text-shadow: 0px 0px 15px rgba(0,0,0,0.3);
-}
+
 
 .imageL {
     background-size:cover;
     background-image: url(/images/NYC.png);
     background-position: center top;
     background-repeat: no-repeat;
-    height: auto;
-    width: auto;
     box-sizing: border-box;
+    justify-items: center;
 
 }
 
 .sectionR {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 100vh;
     box-sizing: border-box;
     padding-top: 120px;
     justify-items: center;
+}
+
+#logo {
+    font-family: 'Playfair Display',serif;
+    font-style:italic;
+    font-weight: bold;
+    font-size: 70px;
+    text-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    width: fit-content;
+    justify-self: center;
 }
 
 .textIntro{
