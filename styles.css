@@ -31,6 +31,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .imageL {
+    display: grid;
     background-size:cover;
     background-image: url(/images/NYC.png);
     background-position: center top;
@@ -42,10 +43,9 @@ h1,h2,h3,h4,h5,h6 {
 
 .sectionR {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.9fr 1.1fr;
     height: 100vh;
     box-sizing: border-box;
-    padding-top: 120px;
     justify-items: center;
 }
 
@@ -55,18 +55,19 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
     font-size: 70px;
     text-shadow: 0px 0px 15px rgba(0,0,0,0.3);
-    width: fit-content;
+    align-self: center;
     justify-self: center;
+    padding: 1rem;
 }
 
 .textIntro{
     font-family: 'Playfair Display',serif;
     font-weight: 400;
     font-size: 28px;
-    width: 100%;
+    width: 420px;
     box-sizing: border-box;
-    padding-left: 10%;
-    padding-right: 10%;
+    align-self: flex-end;
+    margin: 4rem;
 }
 
 .alreadyMember {
@@ -81,10 +82,9 @@ form {
     font-family: Barlow;
     font-size: large;
     font-weight:200;
-    padding:5vw;
-    width: 80%;
+    width: 100%;
     gap: 1rem;
-
+    align-self: center;
 }
 
 label {
@@ -133,7 +133,6 @@ input {
         background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,.8)), url(/images/NYC.png);
         background-position: center top;
         background-repeat: no-repeat;
-        width:fit-content;
     }
 
     .imageL {
